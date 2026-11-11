@@ -1,11 +1,14 @@
-import './App.css'
+import "./App.css";
+import Sidebar from "./components/Sidebar";
+import Chatwindow from "./components/Chatwindow";
 
 function App() {
   return (
-    <main>
-      <h1>Hello</h1>
-    </main>
-  )
+    <>
+      <Sidebar />
+      <Chatwindow />
+    </>
+  );
 }
 
-export default App
+export default App;
