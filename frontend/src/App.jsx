@@ -1,12 +1,11 @@
 import "./App.css";
-import Sidebar from "./components/Sidebar";
-import Chatwindow from "./components/Chatwindow";
+
+import Layout from "./components/Layout";
 
 function App() {
   return (
     <>
-      <Sidebar />
-      <Chatwindow />
+      <Layout />
     </>
   );
 }
