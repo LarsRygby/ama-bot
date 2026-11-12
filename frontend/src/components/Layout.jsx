@@ -113,6 +113,96 @@ function Layout() {
                 Tell me an interesting history fact
               </a>
             </li>
+            <li className="chat-thread-item">
+              <a href="/chat/history-of-coffee" className="chat-thread-link">
+                What's the history of coffee?
+              </a>
+            </li>
+            <li className="chat-thread-item">
+              <a
+                href="/chat/best-programming-language"
+                className="chat-thread-link"
+              >
+                Which programming language should I learn next?
+              </a>
+            </li>
+            <li className="chat-thread-item">
+              <a href="/chat/space-exploration" className="chat-thread-link">
+                How far have we explored space?
+              </a>
+            </li>
+            <li className="chat-thread-item">
+              <a
+                href="/chat/quick-breakfast-ideas"
+                className="chat-thread-link"
+              >
+                Give me some quick breakfast ideas
+              </a>
+            </li>
+            <li className="chat-thread-item">
+              <a
+                href="/chat/understanding-black-holes"
+                className="chat-thread-link"
+              >
+                How do black holes actually work?
+              </a>
+            </li>
+            <li className="chat-thread-item">
+              <a href="/chat/indoor-plants" className="chat-thread-link">
+                What are some easy indoor plants to care for?
+              </a>
+            </li>
+            <li className="chat-thread-item">
+              <a href="/chat/ancient-egypt" className="chat-thread-link">
+                Tell me about ancient Egyptian civilisation
+              </a>
+            </li>
+            <li className="chat-thread-item">
+              <a href="/chat/improve-focus" className="chat-thread-link">
+                How can I improve my concentration?
+              </a>
+            </li>
+            <li className="chat-thread-item">
+              <a href="/chat/ocean-depths" className="chat-thread-link">
+                What lives in the deepest parts of the ocean?
+              </a>
+            </li>
+            <li className="chat-thread-item">
+              <a href="/chat/keyboard-shortcuts" className="chat-thread-link">
+                Useful VS Code keyboard shortcuts
+              </a>
+            </li>
+            <li className="chat-thread-item">
+              <a href="/chat/medieval-castles" className="chat-thread-link">
+                How were medieval castles built?
+              </a>
+            </li>
+            <li className="chat-thread-item">
+              <a href="/chat/meal-prep" className="chat-thread-link">
+                Help me plan meals for the week
+              </a>
+            </li>
+            <li className="chat-thread-item">
+              <a
+                href="/chat/artificial-intelligence"
+                className="chat-thread-link"
+              >
+                How does artificial intelligence learn?
+              </a>
+            </li>
+            <li className="chat-thread-item">
+              <a
+                href="/chat/interesting-animal-facts"
+                className="chat-thread-link"
+              >
+                Share some unusual animal facts
+              </a>
+            </li>
+            <li className="chat-thread-item">
+              <a href="/chat/learn-git" className="chat-thread-link">
+                Explain Git branches and merging
+              </a>
+            </li>
           </ul>
         </nav>
         {/* Sidebar footer */}
@@ -127,7 +217,6 @@ function Layout() {
       </aside>
       <main className="main-content">
         <section className="chat-container">
-            
           <Bean className="chat-watermark" />
 
           <div className="chat-messages">
