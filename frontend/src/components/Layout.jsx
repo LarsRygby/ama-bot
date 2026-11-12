@@ -20,7 +20,7 @@ function Layout() {
         {/* Chat threads list */}
         <nav className="chat-threads-list" aria-label="Chat threads">
           <ul>
-            <span className="chat-threads-title">Recent coffee chats</span>
+            <li className="chat-threads-title">Recent coffee chats</li>
 
             <li className="chat-thread-item">
               <a

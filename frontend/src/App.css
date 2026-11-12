@@ -14,6 +14,7 @@
 
   /* Text */
   --text-primary: #38251B;
+  --text-secondary: #8B7765;
   --text-button: #FFFFFF;
 
   /* Borders */
@@ -55,7 +56,9 @@ body {
 
 .main-content {
   flex: 1;
-  overflow-y: auto;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
 }
 
 /* Sidebar header */
@@ -81,14 +84,6 @@ body {
 
   border: none;
   border-radius: 30%;
-
-  background: var(--bg-button-primary);
-  color: var(--text-button);
-
-  font-size: 1.4rem;
-  font-weight: bold;
-
-  cursor: pointer;
 }
 
 .sidebar-header-text-wrapper {
@@ -101,7 +96,6 @@ body {
   font-size: 2rem;
   font-weight: 600;
   color: var(--text-primary);
-  flex-grow: 1;
   display: flex;
   align-items: center;
   gap: 0.1em;
@@ -201,12 +195,8 @@ body {
 
   background: var(--bg-button-primary);
   color: var(--text-button);
-
-  font-size: 1.4rem;
-  font-weight: bold;
-
-  cursor: pointer;
 }
+
 .user-name {
   font-size: 0.875rem;
   font-weight: 500;
@@ -217,7 +207,7 @@ body {
 .chat-container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding: 0;
   position: relative;
@@ -262,7 +252,6 @@ body {
 
 .message {
   display: flex;
-  margin-bottom: 1rem;
 }
 
 .user-message {
@@ -357,9 +346,6 @@ body {
 
   background: var(--bg-button-primary);
   color: var(--text-button);
-
-  font-size: 1.4rem;
-  font-weight: bold;
 
   cursor: pointer;
 }
