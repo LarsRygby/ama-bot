@@ -2,12 +2,12 @@ import {SidebarHeader} from "./sidebar_components/SidebarHeader"
 import {SidebarFooter} from "./sidebar_components/SidebarFooter"
 import {ChatThreadsList} from "./sidebar_components/ChatThreadsList";
 
-function Sidebar() {
+function Sidebar(props) {
   return (
     <aside className="sidebar">
       <SidebarHeader />
       {/* Chat threads list */}
-      <ChatThreadsList />
+      <ChatThreadsList threads={props.threads} />
       <SidebarFooter />
     </aside>
   );
