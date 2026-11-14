@@ -5,7 +5,7 @@
   --bg-secondary: #ede5d9;
   --bg-hover: #e3d7c8;
   --bg-message-user: #e8ded0;
-  --bg-message-bot: #faf8f4;
+  --bg-message-bot: rgba(250, 248, 244, 0.25);
 
   /* Buttons */
   --bg-button-primary: #795438;
@@ -297,6 +297,9 @@ body {
   color: var(--text-primary);
   border: 1px solid var(--border-light);
   border-bottom-left-radius: 4px;
+
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 /* Chat input area */
