@@ -1,6 +1,6 @@
-import SidebarHeader from "./sidebar_components/SidebarHeader"
-import SidebarFooter from "./sidebar_components/SidebarFooter"
-import ChatThreadsList from "./sidebar_components/ChatThreadsList";
+import {SidebarHeader} from "./sidebar_components/SidebarHeader"
+import {SidebarFooter} from "./sidebar_components/SidebarFooter"
+import {ChatThreadsList} from "./sidebar_components/ChatThreadsList";
 
 function Sidebar() {
   return (

@@ -1,4 +1,4 @@
-function Message(props) {
+export function Message(props) {
   return (
     <div className={`message ${props.type}-message`}>
       <div className="message-content">
@@ -7,5 +7,3 @@ function Message(props) {
     </div>
   );
 }
-
-export default Message;

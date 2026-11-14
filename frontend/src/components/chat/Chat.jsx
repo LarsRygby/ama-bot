@@ -1,6 +1,6 @@
 import { Bean } from "lucide-react";
-import ChatMessages from "./chat_components/ChatMessages";
-import ChatInput from "./chat_components/ChatInput";
+import {ChatMessages} from "./chat_components/ChatMessages";
+import {ChatInput} from "./chat_components/ChatInput";
 
 function Chat() {
   return (

@@ -1,6 +1,6 @@
-import Message from "./Message";
+import {Message} from "./Message";
 
-function ChatMessages() {
+export function ChatMessages() {
   return (
     <div className="chat-messages">
       <div className="chat-messages-inner">
@@ -49,5 +49,3 @@ function ChatMessages() {
     </div>
   );
 }
-
-export default ChatMessages;

@@ -1,6 +1,6 @@
 import { User } from "lucide-react";
 
-function SidebarFooter() {
+export function SidebarFooter() {
   return (
     <div className="sidebar-footer">
       <a href="/profile" className="user-profile">
@@ -12,5 +12,3 @@ function SidebarFooter() {
     </div>
   );
 }
-
-export default SidebarFooter;

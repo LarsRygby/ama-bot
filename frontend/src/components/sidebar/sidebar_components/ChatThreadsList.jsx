@@ -1,7 +1,6 @@
+import {ChatThreadItem} from "./ChatThreadItem";
 
-import ChatThreadItem from "./ChatThreadItem";
-
-function ChatThreadsList() {
+export function ChatThreadsList() {
   return (
     <nav className="chat-threads-list" aria-label="Chat threads">
       <ul>
@@ -40,5 +39,3 @@ function ChatThreadsList() {
     </nav>
   );
 }
-
-export default ChatThreadsList;

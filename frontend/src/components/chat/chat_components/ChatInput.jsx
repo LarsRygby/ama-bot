@@ -1,6 +1,6 @@
 import { Send } from "lucide-react";
 
-function ChatInput() {
+export function ChatInput() {
   return (
     <form className="chat-composer">
       <div className="chat-input-wrapper">
@@ -21,5 +21,3 @@ function ChatInput() {
     </form>
   );
 }
-
-export default ChatInput;

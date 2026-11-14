@@ -1,6 +1,6 @@
 import {Coffee, Plus} from "lucide-react";
 
-function SidebarHeader() {
+export function SidebarHeader() {
   return (
     <div className="sidebar-header">
       <div className="coffee-icon-wrapper">
@@ -16,5 +16,3 @@ function SidebarHeader() {
     </div>
   );
 }
-
-export default SidebarHeader;

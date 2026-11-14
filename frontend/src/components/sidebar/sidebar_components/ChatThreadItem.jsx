@@ -1,4 +1,4 @@
-function ChatThreadItem(props) {
+export function ChatThreadItem(props) {
   return (
     <li className="chat-thread-item">
       <a href={props.href} className="chat-thread-link">
@@ -7,5 +7,3 @@ function ChatThreadItem(props) {
     </li>
   );
 }
-
-export default ChatThreadItem;
