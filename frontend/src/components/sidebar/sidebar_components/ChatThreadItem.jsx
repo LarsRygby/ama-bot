@@ -1,6 +1,6 @@
 export function ChatThreadItem(props) {
   return (
-    <li className="chat-thread-item">
+    <li className={`chat-thread-item ${props.isActive ? "active" : ""}`}>
       <a href={props.href} className="chat-thread-link">
         {props.title}
       </a>

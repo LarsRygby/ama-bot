@@ -1,26 +1,26 @@
 /* CSS Variables */
 :root {
   /* Backgrounds */
-  --bg-primary: #F7F3ED;
-  --bg-secondary: #EDE5D9;
-  --bg-hover: #E3D7C8;
-  --bg-message-user: #E8DED0;
+  --bg-primary: #f7f3ed;
+  --bg-secondary: #ede5d9;
+  --bg-hover: #e3d7c8;
+  --bg-message-user: #e8ded0;
   --bg-message-bot: transparent;
 
   /* Buttons */
   --bg-button-primary: #795438;
-  --bg-button-primary-hover: #5C3D29;
-  --bg-button-disabled: #CBBEAE;
+  --bg-button-primary-hover: #5c3d29;
+  --bg-button-disabled: #cbbeae;
 
   /* Text */
-  --text-primary: #38251B;
-  --text-secondary: #8B7765;
-  --text-button: #FFFFFF;
+  --text-primary: #38251b;
+  --text-secondary: #8b7765;
+  --text-button: #ffffff;
 
   /* Borders */
-  --border-light: #DED3C5;
-  --border-medium: #C8B8A6;
-  --border-focus: #A47148;
+  --border-light: #ded3c5;
+  --border-medium: #c8b8a6;
+  --border-focus: #a47148;
 
   /* Shadows */
   --shadow-focus: rgba(164, 113, 72, 0.18);
@@ -142,6 +142,12 @@ body {
 .chat-thread-item {
   margin-bottom: 0.25rem;
 }
+
+/* Active chat thread */
+.chat-thread-item.active .chat-thread-link {
+  background: var(--bg-hover);
+}
+
 .chat-thread-link {
   display: block;
   width: 100%;
@@ -222,7 +228,7 @@ body {
   width: 75em;
   height: 75em;
 
-  color: #A47148;
+  color: #a47148;
   opacity: 0.08;
 
   pointer-events: none;

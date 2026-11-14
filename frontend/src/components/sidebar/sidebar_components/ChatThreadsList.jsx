@@ -6,7 +6,7 @@ export function ChatThreadsList() {
       <ul>
         <li className="chat-threads-title">Recent coffee chats</li>
 
-        <ChatThreadItem href="/chat/how-to-learn-programming" title="How to learn programming?" />
+        <ChatThreadItem href="/chat/how-to-learn-programming" title="How to learn programming?" isActive/>
         <ChatThreadItem href="/chat/best-pizza-toppings" title="What are the best pizza toppings?" />
         <ChatThreadItem href="/chat/explain-quantum-physics" title="Can you explain quantum physics?" />
         <ChatThreadItem href="/chat/morning-routine-ideas" title="Help me create a morning routine" />
