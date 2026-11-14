@@ -5,7 +5,7 @@
   --bg-secondary: #ede5d9;
   --bg-hover: #e3d7c8;
   --bg-message-user: #e8ded0;
-  --bg-message-bot: transparent;
+  --bg-message-bot: #faf8f4;
 
   /* Buttons */
   --bg-button-primary: #795438;
@@ -258,14 +258,16 @@ body {
 
 .message {
   display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
 .user-message {
-  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .bot-message {
-  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .message-content {
@@ -275,6 +277,12 @@ body {
   font-size: 0.9rem;
   line-height: 1.4;
   white-space: pre-wrap;
+}
+
+.message-timestamp {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  padding: 0 0.4rem;
 }
 
 .user-message .message-content {
@@ -287,7 +295,7 @@ body {
 .bot-message .message-content {
   background-color: var(--bg-message-bot);
   color: var(--text-primary);
-  border: none;
+  border: 1px solid var(--border-light);
   border-bottom-left-radius: 4px;
 }
 
