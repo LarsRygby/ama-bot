@@ -11,6 +11,8 @@
   --bg-button-primary: #795438;
   --bg-button-primary-hover: #5c3d29;
   --bg-button-disabled: #cbbeae;
+  --text-button-danger: #a34d43;
+  --bg-button-danger-hover: #efb8a9;
 
   /* Text */
   --text-primary: #38251b;
@@ -143,30 +145,68 @@ body {
   margin-bottom: 0.25rem;
 }
 
+/* Default chat item */
+.chat-thread-item-content {
+  display: flex;
+  align-items: center;
+  padding: 0.25rem 0.5rem;
+
+  background: transparent;
+  border-radius: 6px;
+}
+
+.chat-thread-item-content:hover {
+  background: var(--bg-hover);
+}
+
 /* Active chat thread */
-.chat-thread-item.active .chat-thread-link {
+.chat-thread-item.active .chat-thread-item-content {
   background: var(--bg-hover);
 }
 
 .chat-thread-link {
-  display: block;
-  width: 100%;
-  background: transparent;
-  border: none;
-  border-radius: 6px;
-  padding: 0.5rem;
-  text-align: left;
+  flex: 1;
+  min-width: 0;
+
   font-size: 0.875rem;
   color: var(--text-primary);
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.1s ease;
+
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding-right: 0.5rem;
 }
-.chat-thread-link:hover {
-  background: var(--bg-hover);
+.chat-thread-delete-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.35rem;
+  margin: 0;
+
+  color: var(--bg-button-primary);
+  background: transparent;
+  border: none;
+  border-radius: 30%;
+  cursor: pointer;
+
+  opacity: 0;
+}
+
+.chat-thread-item-content:hover .chat-thread-delete-btn {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.chat-thread-delete-btn:hover {
+  color: var(--text-button-danger);
+  background: var(--bg-button-danger-hover);
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 /* Sidebar footer */
