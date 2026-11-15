@@ -1,13 +1,14 @@
-export function Message(props) {
+
+export function Message({ timestamp, type = "user", children = "Empty message" }) {
   const now = new Date();
-  const messageDate = props.timestamp;
+  const messageDate = new Date(timestamp);
 
   const oneWeekAgo = new Date();
   oneWeekAgo.setDate(now.getDate() - 7);
 
   const isOlderThanWeek = messageDate < oneWeekAgo;
 
-  const timestamp = messageDate.toLocaleString("da-DK", {
+  const formattedTimestamp = messageDate.toLocaleString("da-DK", {
     weekday: isOlderThanWeek ? undefined : "short",
     day: isOlderThanWeek ? "2-digit" : undefined,
     month: isOlderThanWeek ? "short" : undefined,
@@ -16,10 +17,12 @@ export function Message(props) {
   });
 
   return (
-    <div className={`message ${props.type}-message`}>
-      <div className="message-content">{props.children}</div>
+    <div className={`message ${type}-message`}>
+      <div className="message-content">{children}</div>
 
-      <span className="message-timestamp">{timestamp}</span>
+      <span className="message-timestamp">
+        {formattedTimestamp}
+      </span>
     </div>
   );
 }

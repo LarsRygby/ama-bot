@@ -1,12 +1,12 @@
 import { ChatThreadItem } from "./ChatThreadItem";
 
-export function ChatThreadsList(props) {
+export function ChatThreadsList({threads = []}) {
   return (
     <nav className="chat-threads-list" aria-label="Chat threads">
       <ul>
         <li className="chat-threads-title">Recent coffee chats</li>
 
-        {props.threads.map((thread) => (
+        {threads.map((thread) => (
           <ChatThreadItem
             key={thread.id}
             href={thread.href}
